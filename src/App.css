@@ -1,38 +1,168 @@
-.App {
+
+html, body, #root {
+  
+  width: 800px;
+  height: 480px;
+  display: flex;
+}
+
+.dashboard {
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-size: 22px;
+  /*border: 1px solid red;*/
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+  display: flex;
+  flex: 1;
+  /*width: 100%;*/
+  align-items: stretch;
+  justify-content: space-between;
+  /*border: 1px solid green;*/
+  box-sizing: border-box;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top {
+  padding: 10px;
+  align-items: stretch
 }
+
+.bottom {
+  padding: 5px;
+}
+
+.current-date {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.current-day{
+  font-size: 40px;
+}
+
+.temp-container{
+  display: flex;
+  align-items: stretch;
+}
+
+.current-temp {
+  font-size: 50px;
+  margin-right: 0px 15px
+}
+
+.time{
+  font-size: 150px;
+}
+
+.day-block {
+  border: 1px solid white;
+  flex: 1;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 5px;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.day-block > .weather-icon{
+  width: 50px;
+}
+
+.day-summary {
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.day-hi-low {
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily-date {
+  font-size: 20px;
+
+}
+
+.date-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+
+.current-container{
+  display: flex;
+}
+.current-weather{
+  /*flex: 1;*/
+  text-align: left;
+}
+
+.current-line{
+  display: flex;
+  align-items: flex-start;
+}
+
+.hi-low {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: flex-start;
+}
+
+.mini-icon {
+  width: 35px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.current-container.weather-icon {
+  width: 230px;
+
+  margin: -20px;
+}
+/*.App-logo {*/
+  /*height: 40vmin;*/
+  /*pointer-events: none;*/
+/*}*/
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+  /*.App-logo {*/
+    /*animation: App-logo-spin infinite 20s linear;*/
+  /*}*/
+/*}*/
+
+/*.App-header {*/
+  /*background-color: #282c34;*/
+  /*min-height: 100vh;*/
+/*}*/
+
+/*.App-link {*/
+  /*color: #61dafb;*/
+/*}*/
+
+/*@keyframes App-logo-spin {*/
+  /*from {*/
+    /*transform: rotate(0deg);*/
+  /*}*/
+  /*to {*/
+    /*transform: rotate(360deg);*/
+  /*}*/
+/*}*/
