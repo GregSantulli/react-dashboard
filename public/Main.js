@@ -2,7 +2,7 @@ const {app, BrowserWindow} = require('electron')
 const exec = require('child_process').exec
 function createWindow() {   
   win = new BrowserWindow({
-    show: false;
+    show: false,
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true
