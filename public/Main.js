@@ -2,8 +2,7 @@ const {app, BrowserWindow} = require('electron')
 const exec = require('child_process').exec
 function createWindow() {   
   win = new BrowserWindow({
-    show: false,
-    autoHideMenuBar: true,
+    frame: false,
     webPreferences: {
       nodeIntegration: true
     }
@@ -12,8 +11,6 @@ function createWindow() {
 
   win.maximize()
   win.loadURL("http://localhost:3000")
-  win.setMenu(null)
-  win.show()
 
 }      
 
