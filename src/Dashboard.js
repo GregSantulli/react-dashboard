@@ -85,7 +85,7 @@ export default class Dashboard extends React.Component {
       <div className="dashboard">
       
         <div className="section top">
-          <div> 
+          <div className="left"> 
             <div className="current-container">
               {weatherIcon(current.icon)}
               <div className="current-weather">

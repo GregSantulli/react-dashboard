@@ -8,11 +8,9 @@ html, body, #root {
 
 .dashboard {
   width: 100%;
-  text-align: center;
   background-color: #282c34;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   color: white;
   font-size: 22px;
@@ -112,6 +110,10 @@ html, body, #root {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.left{
+  width: 50%;
 }
 
 
