@@ -45,6 +45,7 @@ html, body, #root {
   text-align: right;
   flex: 1;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .current-day{
@@ -61,8 +62,19 @@ html, body, #root {
   margin-right: 0px 15px
 }
 
-.time{
+
+.clock{
   font-size: 150px;
+  line-height: 145px;
+ }
+
+.seconds{
+  display: flex;
+  font-size: 14px;
+}
+
+.seconds > div {
+  width: 10px;
 }
 
 .day-block {
@@ -105,6 +117,7 @@ html, body, #root {
 
 .current-container{
   display: flex;
+  align-items: flex-start;
 }
 .current-weather{
   /*flex: 1;*/
@@ -137,6 +150,19 @@ html, body, #root {
   width: 230px;
 
   margin: -20px;
+}
+
+
+#brightness-slider{
+  position: absolute;
+  top: 29%;
+  left: 34%;
+  width: 254px;;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 /*.App-logo {*/
   /*height: 40vmin;*/
