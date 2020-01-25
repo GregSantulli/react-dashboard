@@ -12,6 +12,7 @@ function createWindow() {
 
   win.maximize()
   win.loadURL("http://localhost:3000")
+  win.setMenu(null)
   win.show()
 
 }      
